@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hilewex - İletişim & Yorumlar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #eee;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #444;
+        }
+        h1 {
+            margin: 0;
+            color: #00b894;
+        }
+        section {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #00b894aa;
+        }
+        h2 {
+            color: #00cec9;
+            margin-bottom: 15px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #eee;
+            resize: vertical;
+        }
+        button {
+            background-color: #00b894;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #019875;
+        }
+        .info {
+            text-align: center;
+            color: #bbb;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hilewex</h1>
+    <p>Hile Şikayetleri ve Yorumlarınızı Bizimle Paylaşın</p>
+</header>
+
+<section>
+    <h2>Görüş ve Şikayet Formu</h2>
+    <form action="mailto:example@email.com" method="post" enctype="text/plain">
+        <label for="name">Adınız</label>
+        <input type="text" id="name" name="Ad" placeholder="Adınızı yazınız" required>
+
+        <label for="email">E-posta</label>
+        <input type="email" id="email" name="Email" placeholder="E-posta adresiniz" required>
+
+        <label for="message">Mesajınız</label>
+        <textarea id="message" name="Mesaj" rows="6" placeholder="Şikayet veya yorumunuzu yazınız" required></textarea>
+
+        <button type="submit">Gönder</button>
+    </form>
+    <p class="info">Gönderilen bilgiler e-posta adresimize ulaşacaktır.</p>
+</section>
+
+</body>
+</html>
